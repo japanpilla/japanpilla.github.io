@@ -186,6 +186,37 @@
   .cta-block .btn{background:var(--yellow);color:var(--ink)}
   .cta-block .btn:hover{background:#ffd957}
 
+  /* ---------- PHRASES ---------- */
+  .phrases{display:grid;grid-template-columns:1fr;gap:10px;margin-top:14px}
+  .ph{
+    background:#fff;border:3px solid var(--ink);border-radius:12px;
+    padding:10px 14px;display:flex;flex-direction:column;gap:2px;
+  }
+  .ph .jp{font-size:1.3rem;font-weight:800;color:var(--navy)}
+  .ph .ro{font-weight:700;color:var(--orange)}
+  .ph .en{color:#444;font-size:.95rem}
+  p.note{margin-top:12px;font-size:.95rem;color:#444}
+  p.note a{color:var(--orange);font-weight:700}
+  @media (min-width:640px){.phrases{grid-template-columns:repeat(2,1fr)}}
+
+  /* ---------- FOLLOW / SOCIAL ---------- */
+  .follow{
+    background:#fff;border:3px solid var(--ink);border-radius:14px;
+    padding:18px 16px;margin-top:12px;text-align:center;
+    box-shadow:4px 4px 0 var(--yellow);
+  }
+  .follow p{color:#444;margin-bottom:14px}
+  .social{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .social a{
+    display:inline-flex;align-items:center;gap:8px;
+    text-decoration:none;font-weight:800;color:#fff;
+    padding:12px 20px;border-radius:12px;border:3px solid var(--ink);
+    box-shadow:3px 3px 0 var(--ink);
+  }
+  .social a.ig{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}
+  .social a.yt{background:#e62117}
+  .social a:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+
   /* ---------- FOOTER ---------- */
   footer{
     margin-top:30px;background:var(--navy);color:#cfd3f0;
@@ -341,6 +372,38 @@
     </div>
   </section>
 
+  <!-- ================= JAPANESE PHRASES ================= -->
+  <section>
+    <h2>Japanese for Anime Fans</h2>
+    <p class="lead">Going to a convention with Japanese guests? Learn a few words you hear in anime, and use them for real.</p>
+    <div class="phrases">
+      <div class="ph"><span class="jp">すごい</span><span class="ro">Sugoi</span><span class="en">Amazing / awesome</span></div>
+      <div class="ph"><span class="jp">かわいい</span><span class="ro">Kawaii</span><span class="en">Cute</span></div>
+      <div class="ph"><span class="jp">大好き</span><span class="ro">Daisuki</span><span class="en">I really love it</span></div>
+      <div class="ph"><span class="jp">最高</span><span class="ro">Saikou</span><span class="en">The best!</span></div>
+      <div class="ph"><span class="jp">推し</span><span class="ro">Oshi</span><span class="en">Your favourite character or idol</span></div>
+      <div class="ph"><span class="jp">コスプレ</span><span class="ro">Kosupure</span><span class="en">Cosplay</span></div>
+      <div class="ph"><span class="jp">はじめまして</span><span class="ro">Hajimemashite</span><span class="en">Nice to meet you</span></div>
+      <div class="ph"><span class="jp">ありがとうございます</span><span class="ro">Arigatou gozaimasu</span><span class="en">Thank you (polite)</span></div>
+      <div class="ph"><span class="jp">写真を撮ってもいいですか</span><span class="ro">Shashin o totte mo ii desu ka?</span><span class="en">May I take a photo?</span></div>
+      <div class="ph"><span class="jp">これはいくらですか</span><span class="ro">Kore wa ikura desu ka?</span><span class="en">How much is this?</span></div>
+    </div>
+    <p class="note">Want more everyday Japanese explained in Telugu? Check the <a href="https://www.youtube.com/@japan_pilla" target="_blank" rel="noopener">Japan Pilla YouTube channel</a>.</p>
+  </section>
+
+  <!-- ================= FOLLOW ================= -->
+  <section>
+    <h2>Follow Japan Pilla</h2>
+    <div class="follow">
+      <p><strong>Telugu lo Japanese 🇮🇳🇯🇵</strong><br>
+      Japan Pilla shares everyday Japanese you can actually use, in Telugu, straight from Tokyo. Real Japan, real words, real situations. Follow for daily Japanese and life in Japan.</p>
+      <div class="social">
+        <a class="ig" href="https://www.instagram.com/japan_pilla" target="_blank" rel="noopener">📸 Instagram</a>
+        <a class="yt" href="https://www.youtube.com/@japan_pilla" target="_blank" rel="noopener">▶️ YouTube</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= BOOK NOW CTA ================= -->
   <div class="cta-block">
     <h2>Don't Miss Out!</h2>
@@ -371,7 +434,11 @@
 </main>
 
 <footer>
-  <p>Independent promotional page for Anime India Hyderabad. Not the official website.</p>
+  <p>
+    <a href="https://www.instagram.com/japan_pilla" target="_blank" rel="noopener">Instagram</a> ·
+    <a href="https://www.youtube.com/@japan_pilla" target="_blank" rel="noopener">YouTube</a>
+  </p>
+  <p style="margin-top:6px">Independent promotional page by Japan Pilla for Anime India Hyderabad. Not the official website.</p>
   <p style="margin-top:6px">Event details &amp; official ticketing on
     <a href="https://www.district.in/events/anime-india-hyderabad-2026-buy-tickets" target="_blank" rel="noopener">District</a>.
     Event details may change – please verify before booking.</p>
