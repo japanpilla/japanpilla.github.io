@@ -121,3 +121,62 @@ footer {
   padding: 36px 20px; margin-top: 60px; font-size: 0.9rem;
 }
 footer a { color: #f4efe6; margin: 0 10px; }
+/* ===== Added: readability, mobile tables, lesson components ===== */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Telugu", "Noto Sans JP", "Hiragino Sans", sans-serif; }
+nav a.active { color: var(--primary); border-bottom: 2px solid var(--primary); }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0 26px; border-radius: 8px; }
+.table-wrap table { margin: 0; min-width: 560px; font-size: 0.95rem; }
+.table-wrap td, .table-wrap th { vertical-align: top; }
+article ul, article ol { margin: 0 0 18px 24px; }
+article li { margin-bottom: 8px; }
+article h3 { font-size: 1.15rem; color: var(--secondary); margin: 22px 0 8px; }
+article .lead { font-size: 1.1rem; color: var(--text-muted); }
+.byline { font-size: 0.9rem; color: var(--text-muted); margin: -6px 0 20px; }
+.note, .tip {
+  background: #fff8e6; border-left: 4px solid #f2b222;
+  border-radius: 6px; padding: 14px 16px; margin: 20px 0;
+}
+.tip { background: #eef7ee; border-left-color: #2e7d32; }
+.note p:last-child, .tip p:last-child { margin-bottom: 0; }
+.dialogue { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 8px 16px; margin: 18px 0 26px; }
+.dlg { padding: 10px 0; border-bottom: 1px dashed var(--border); display: grid; gap: 1px; }
+.dlg:last-child { border-bottom: 0; }
+.dlg .who { font-size: 0.78rem; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: var(--primary); }
+.dlg .jp { font-size: 1.15rem; }
+.dlg .en { color: var(--text-muted); font-size: 0.92rem; }
+.toc { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 18px 0 26px; }
+.toc strong { color: var(--secondary); }
+.toc ul { margin: 8px 0 0 20px; }
+.more { margin-top: 44px; padding-top: 8px; border-top: 2px solid var(--border); }
+.more h2 { font-size: 1.3rem; color: var(--secondary); margin: 16px 0 10px; }
+.more ul { margin-left: 22px; }
+.pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 34px 0 6px; }
+.pager a { background: #fff; border: 2px solid var(--secondary); color: var(--secondary); font-weight: 700; padding: 10px 16px; border-radius: 8px; }
+.pager a:hover { text-decoration: none; background: #eef0ff; }
+.hero-intro { text-align: center; padding: 18px 0 8px; }
+.hero-intro h1 { font-size: 2.3rem; color: var(--secondary); line-height: 1.2; margin-bottom: 10px; }
+.hero-intro p { max-width: 640px; margin: 0 auto 16px; color: var(--text-muted); font-size: 1.1rem; }
+.path { counter-reset: step; list-style: none; margin: 18px 0 8px !important; padding: 0; display: grid; gap: 12px; }
+.path li { counter-increment: step; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px 14px 56px; position: relative; margin: 0; }
+.path li::before { content: counter(step); position: absolute; left: 14px; top: 12px; width: 30px; height: 30px; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.path li a { font-weight: 700; }
+.event-strip { display: flex; gap: 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; background: #fff; border: 2px solid var(--primary); border-radius: 12px; padding: 18px 20px; margin: 30px 0 10px; }
+.event-strip h3 { margin: 0 0 4px; color: var(--secondary); }
+.event-strip p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+.social-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0; }
+.foot-links a, .foot-social a { margin: 0 8px; }
+.foot-links, .foot-social { margin-top: 10px; }
+@media (max-width: 640px) {
+  .hero-intro h1 { font-size: 1.8rem; }
+  article h1 { font-size: 1.8rem; }
+  nav a { margin-left: 0; margin-right: 12px; }
+  .nav-wrap { padding: 10px 16px; }
+}
+
+/* kana grid */
+table.kana { min-width: 330px; text-align: center; }
+table.kana th { text-align: center; padding: 6px 3px; font-size: 0.72rem; }
+table.kana td.kcell { text-align: center; padding: 6px 2px; line-height: 1.35; }
+table.kana td.kcell .jp { font-size: 1.5rem; }
+.small-note { font-size: 0.88rem; color: var(--text-muted); margin-top: 8px; }
+.event-meta-box .meta-item { line-height: 1.5; }
